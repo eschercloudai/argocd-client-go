@@ -3243,9 +3243,7 @@ components:
       type: object
     applicationLogEntry:
       example:
-        timeStamp:
-          seconds: seconds
-          nanos: 0
+        timeStamp: timeStamp
         last: true
         timeStampStr: timeStampStr
         podName: podName
@@ -3258,7 +3256,7 @@ components:
         podName:
           type: string
         timeStamp:
-          $ref: '#/components/schemas/v1Time'
+          type: string
         timeStampStr:
           type: string
       type: object
@@ -3347,9 +3345,7 @@ components:
             annotations:
               key: annotations
             generateName: generateName
-            deletionTimestamp:
-              seconds: seconds
-              nanos: 0
+            deletionTimestamp: deletionTimestamp
             labels:
               key: labels
             ownerReferences:
@@ -3374,9 +3370,7 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             - apiVersion: apiVersion
@@ -3384,15 +3378,11 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             clusterName: clusterName
-            creationTimestamp:
-              seconds: seconds
-              nanos: 0
+            creationTimestamp: creationTimestamp
             name: name
             namespace: namespace
           spec:
@@ -13894,16 +13884,12 @@ components:
           status:
             conditions:
             - reason: reason
-              lastTransitionTime:
-                seconds: seconds
-                nanos: 0
+              lastTransitionTime: lastTransitionTime
               message: message
               type: type
               status: status
             - reason: reason
-              lastTransitionTime:
-                seconds: seconds
-                nanos: 0
+              lastTransitionTime: lastTransitionTime
               message: message
               type: type
               status: status
@@ -14324,9 +14310,7 @@ components:
             annotations:
               key: annotations
             generateName: generateName
-            deletionTimestamp:
-              seconds: seconds
-              nanos: 0
+            deletionTimestamp: deletionTimestamp
             labels:
               key: labels
             ownerReferences:
@@ -14351,9 +14335,7 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             - apiVersion: apiVersion
@@ -14361,15 +14343,11 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             clusterName: clusterName
-            creationTimestamp:
-              seconds: seconds
-              nanos: 0
+            creationTimestamp: creationTimestamp
             name: name
             namespace: namespace
           spec:
@@ -14499,9 +14477,7 @@ components:
             annotations:
               key: annotations
             generateName: generateName
-            deletionTimestamp:
-              seconds: seconds
-              nanos: 0
+            deletionTimestamp: deletionTimestamp
             labels:
               key: labels
             ownerReferences:
@@ -14526,9 +14502,7 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             - apiVersion: apiVersion
@@ -14536,15 +14510,11 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             clusterName: clusterName
-            creationTimestamp:
-              seconds: seconds
-              nanos: 0
+            creationTimestamp: creationTimestamp
             name: name
             namespace: namespace
           spec:
@@ -14671,9 +14641,7 @@ components:
           githubAppID: githubAppID
           connectionState:
             message: message
-            attemptedAt:
-              seconds: seconds
-              nanos: 0
+            attemptedAt: attemptedAt
             status: status
           repo: repo
           githubAppInstallationID: githubAppInstallationID
@@ -14696,9 +14664,7 @@ components:
           githubAppID: githubAppID
           connectionState:
             message: message
-            attemptedAt:
-              seconds: seconds
-              nanos: 0
+            attemptedAt: attemptedAt
             status: status
           repo: repo
           githubAppInstallationID: githubAppInstallationID
@@ -14726,9 +14692,7 @@ components:
             annotations:
               key: annotations
             generateName: generateName
-            deletionTimestamp:
-              seconds: seconds
-              nanos: 0
+            deletionTimestamp: deletionTimestamp
             labels:
               key: labels
             ownerReferences:
@@ -14753,9 +14717,7 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             - apiVersion: apiVersion
@@ -14763,15 +14725,11 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             clusterName: clusterName
-            creationTimestamp:
-              seconds: seconds
-              nanos: 0
+            creationTimestamp: creationTimestamp
             name: name
             namespace: namespace
           spec:
@@ -14897,18 +14855,14 @@ components:
           serverVersion: serverVersion
           connectionState:
             message: message
-            attemptedAt:
-              seconds: seconds
-              nanos: 0
+            attemptedAt: attemptedAt
             status: status
           annotations:
             key: annotations
           project: project
           labels:
             key: labels
-          refreshRequestedAt:
-            seconds: seconds
-            nanos: 0
+          refreshRequestedAt: refreshRequestedAt
           clusterResources: true
           name: name
           shard: shard
@@ -14941,17 +14895,13 @@ components:
             - apiVersions
             connectionState:
               message: message
-              attemptedAt:
-                seconds: seconds
-                nanos: 0
+              attemptedAt: attemptedAt
               status: status
             cacheInfo:
-              apisCount: apisCount
-              lastCacheSyncTime:
-                seconds: seconds
-                nanos: 0
-              resourcesCount: resourcesCount
-            applicationsCount: applicationsCount
+              apisCount: 6
+              lastCacheSyncTime: lastCacheSyncTime
+              resourcesCount: 1
+            applicationsCount: 0
           namespaces:
           - namespaces
           - namespaces
@@ -14959,18 +14909,14 @@ components:
           serverVersion: serverVersion
           connectionState:
             message: message
-            attemptedAt:
-              seconds: seconds
-              nanos: 0
+            attemptedAt: attemptedAt
             status: status
           annotations:
             key: annotations
           project: project
           labels:
             key: labels
-          refreshRequestedAt:
-            seconds: seconds
-            nanos: 0
+          refreshRequestedAt: refreshRequestedAt
           clusterResources: true
           name: name
           shard: shard
@@ -15003,17 +14949,13 @@ components:
             - apiVersions
             connectionState:
               message: message
-              attemptedAt:
-                seconds: seconds
-                nanos: 0
+              attemptedAt: attemptedAt
               status: status
             cacheInfo:
-              apisCount: apisCount
-              lastCacheSyncTime:
-                seconds: seconds
-                nanos: 0
-              resourcesCount: resourcesCount
-            applicationsCount: applicationsCount
+              apisCount: 6
+              lastCacheSyncTime: lastCacheSyncTime
+              resourcesCount: 1
+            applicationsCount: 0
           namespaces:
           - namespaces
           - namespaces
@@ -15047,9 +14989,7 @@ components:
             annotations:
               key: annotations
             generateName: generateName
-            deletionTimestamp:
-              seconds: seconds
-              nanos: 0
+            deletionTimestamp: deletionTimestamp
             labels:
               key: labels
             ownerReferences:
@@ -15074,9 +15014,7 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             - apiVersion: apiVersion
@@ -15084,15 +15022,11 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             clusterName: clusterName
-            creationTimestamp:
-              seconds: seconds
-              nanos: 0
+            creationTimestamp: creationTimestamp
             name: name
             namespace: namespace
           spec:
@@ -15222,9 +15156,7 @@ components:
             annotations:
               key: annotations
             generateName: generateName
-            deletionTimestamp:
-              seconds: seconds
-              nanos: 0
+            deletionTimestamp: deletionTimestamp
             labels:
               key: labels
             ownerReferences:
@@ -15249,9 +15181,7 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             - apiVersion: apiVersion
@@ -15259,15 +15189,11 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             clusterName: clusterName
-            creationTimestamp:
-              seconds: seconds
-              nanos: 0
+            creationTimestamp: creationTimestamp
             name: name
             namespace: namespace
           spec:
@@ -15795,9 +15721,7 @@ components:
           annotations:
             key: annotations
           generateName: generateName
-          deletionTimestamp:
-            seconds: seconds
-            nanos: 0
+          deletionTimestamp: deletionTimestamp
           labels:
             key: labels
           ownerReferences:
@@ -15822,9 +15746,7 @@ components:
               Raw: Raw
             manager: manager
             subresource: subresource
-            time:
-              seconds: seconds
-              nanos: 0
+            time: time
             operation: operation
             fieldsType: fieldsType
           - apiVersion: apiVersion
@@ -15832,15 +15754,11 @@ components:
               Raw: Raw
             manager: manager
             subresource: subresource
-            time:
-              seconds: seconds
-              nanos: 0
+            time: time
             operation: operation
             fieldsType: fieldsType
           clusterName: clusterName
-          creationTimestamp:
-            seconds: seconds
-            nanos: 0
+          creationTimestamp: creationTimestamp
           name: name
           namespace: namespace
         involvedObject:
@@ -15859,9 +15777,7 @@ components:
         message: message
         type: type
         reportingComponent: reportingComponent
-        firstTimestamp:
-          seconds: seconds
-          nanos: 0
+        firstTimestamp: firstTimestamp
         related:
           uid: uid
           apiVersion: apiVersion
@@ -15870,9 +15786,7 @@ components:
           fieldPath: fieldPath
           name: name
           namespace: namespace
-        lastTimestamp:
-          seconds: seconds
-          nanos: 0
+        lastTimestamp: lastTimestamp
         series:
           count: 1
           lastObservedTime:
@@ -15897,11 +15811,11 @@ components:
         eventTime:
           $ref: '#/components/schemas/v1MicroTime'
         firstTimestamp:
-          $ref: '#/components/schemas/v1Time'
+          type: string
         involvedObject:
           $ref: '#/components/schemas/v1ObjectReference'
         lastTimestamp:
-          $ref: '#/components/schemas/v1Time'
+          type: string
         message:
           title: |-
             A human-readable description of the status of this operation.
@@ -15958,9 +15872,7 @@ components:
             annotations:
               key: annotations
             generateName: generateName
-            deletionTimestamp:
-              seconds: seconds
-              nanos: 0
+            deletionTimestamp: deletionTimestamp
             labels:
               key: labels
             ownerReferences:
@@ -15985,9 +15897,7 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             - apiVersion: apiVersion
@@ -15995,15 +15905,11 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             clusterName: clusterName
-            creationTimestamp:
-              seconds: seconds
-              nanos: 0
+            creationTimestamp: creationTimestamp
             name: name
             namespace: namespace
           involvedObject:
@@ -16022,9 +15928,7 @@ components:
           message: message
           type: type
           reportingComponent: reportingComponent
-          firstTimestamp:
-            seconds: seconds
-            nanos: 0
+          firstTimestamp: firstTimestamp
           related:
             uid: uid
             apiVersion: apiVersion
@@ -16033,9 +15937,7 @@ components:
             fieldPath: fieldPath
             name: name
             namespace: namespace
-          lastTimestamp:
-            seconds: seconds
-            nanos: 0
+          lastTimestamp: lastTimestamp
           series:
             count: 1
             lastObservedTime:
@@ -16055,9 +15957,7 @@ components:
             annotations:
               key: annotations
             generateName: generateName
-            deletionTimestamp:
-              seconds: seconds
-              nanos: 0
+            deletionTimestamp: deletionTimestamp
             labels:
               key: labels
             ownerReferences:
@@ -16082,9 +15982,7 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             - apiVersion: apiVersion
@@ -16092,15 +15990,11 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             clusterName: clusterName
-            creationTimestamp:
-              seconds: seconds
-              nanos: 0
+            creationTimestamp: creationTimestamp
             name: name
             namespace: namespace
           involvedObject:
@@ -16119,9 +16013,7 @@ components:
           message: message
           type: type
           reportingComponent: reportingComponent
-          firstTimestamp:
-            seconds: seconds
-            nanos: 0
+          firstTimestamp: firstTimestamp
           related:
             uid: uid
             apiVersion: apiVersion
@@ -16130,9 +16022,7 @@ components:
             fieldPath: fieldPath
             name: name
             namespace: namespace
-          lastTimestamp:
-            seconds: seconds
-            nanos: 0
+          lastTimestamp: lastTimestamp
           series:
             count: 1
             lastObservedTime:
@@ -16402,9 +16292,7 @@ components:
           Raw: Raw
         manager: manager
         subresource: subresource
-        time:
-          seconds: seconds
-          nanos: 0
+        time: time
         operation: operation
         fieldsType: fieldsType
       properties:
@@ -16441,7 +16329,7 @@ components:
             it always corresponds to the version of the main resource.
           type: string
         time:
-          $ref: '#/components/schemas/v1Time'
+          type: string
       type: object
     v1MicroTime:
       description: |-
@@ -16536,9 +16424,7 @@ components:
         annotations:
           key: annotations
         generateName: generateName
-        deletionTimestamp:
-          seconds: seconds
-          nanos: 0
+        deletionTimestamp: deletionTimestamp
         labels:
           key: labels
         ownerReferences:
@@ -16563,9 +16449,7 @@ components:
             Raw: Raw
           manager: manager
           subresource: subresource
-          time:
-            seconds: seconds
-            nanos: 0
+          time: time
           operation: operation
           fieldsType: fieldsType
         - apiVersion: apiVersion
@@ -16573,15 +16457,11 @@ components:
             Raw: Raw
           manager: manager
           subresource: subresource
-          time:
-            seconds: seconds
-            nanos: 0
+          time: time
           operation: operation
           fieldsType: fieldsType
         clusterName: clusterName
-        creationTimestamp:
-          seconds: seconds
-          nanos: 0
+        creationTimestamp: creationTimestamp
         name: name
         namespace: namespace
       properties:
@@ -16606,7 +16486,7 @@ components:
             +optional
           type: string
         creationTimestamp:
-          $ref: '#/components/schemas/v1Time'
+          type: string
         deletionGracePeriodSeconds:
           format: int64
           title: |-
@@ -16617,7 +16497,7 @@ components:
             +optional
           type: string
         deletionTimestamp:
-          $ref: '#/components/schemas/v1Time'
+          type: string
         finalizers:
           items:
             type: string
@@ -16909,34 +16789,7 @@ components:
           type: string
       type: object
     v1Time:
-      description: |-
-        Time is a wrapper around time.Time which supports correct
-        marshaling to YAML and JSON.  Wrappers are provided for many
-        of the factory methods that the time package offers.
-
-        +protobuf.options.marshal=false
-        +protobuf.as=Timestamp
-        +protobuf.options.(gogoproto.goproto_stringer)=false
-      example:
-        seconds: seconds
-        nanos: 0
-      properties:
-        nanos:
-          description: |-
-            Non-negative fractions of a second at nanosecond resolution. Negative
-            second values with fractions must still have non-negative nanos values
-            that count forward in time. Must be from 0 to 999,999,999
-            inclusive. This field may be limited in precision depending on context.
-          format: int32
-          type: integer
-        seconds:
-          description: |-
-            Represents seconds of UTC time since Unix epoch
-            1970-01-01T00:00:00Z. Must be from 0001-01-01T00:00:00Z to
-            9999-12-31T23:59:59Z inclusive.
-          format: int64
-          type: string
-      type: object
+      type: string
     v1alpha1AWSAuthConfig:
       example:
         roleARN: roleARN
@@ -16963,9 +16816,7 @@ components:
           annotations:
             key: annotations
           generateName: generateName
-          deletionTimestamp:
-            seconds: seconds
-            nanos: 0
+          deletionTimestamp: deletionTimestamp
           labels:
             key: labels
           ownerReferences:
@@ -16990,9 +16841,7 @@ components:
               Raw: Raw
             manager: manager
             subresource: subresource
-            time:
-              seconds: seconds
-              nanos: 0
+            time: time
             operation: operation
             fieldsType: fieldsType
           - apiVersion: apiVersion
@@ -17000,15 +16849,11 @@ components:
               Raw: Raw
             manager: manager
             subresource: subresource
-            time:
-              seconds: seconds
-              nanos: 0
+            time: time
             operation: operation
             fieldsType: fieldsType
           clusterName: clusterName
-          creationTimestamp:
-            seconds: seconds
-            nanos: 0
+          creationTimestamp: creationTimestamp
           name: name
           namespace: namespace
         spec:
@@ -17165,9 +17010,7 @@ components:
             annotations:
               key: annotations
             generateName: generateName
-            deletionTimestamp:
-              seconds: seconds
-              nanos: 0
+            deletionTimestamp: deletionTimestamp
             labels:
               key: labels
             ownerReferences:
@@ -17192,9 +17035,7 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             - apiVersion: apiVersion
@@ -17202,15 +17043,11 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             clusterName: clusterName
-            creationTimestamp:
-              seconds: seconds
-              nanos: 0
+            creationTimestamp: creationTimestamp
             name: name
             namespace: namespace
           spec:
@@ -17340,9 +17177,7 @@ components:
             annotations:
               key: annotations
             generateName: generateName
-            deletionTimestamp:
-              seconds: seconds
-              nanos: 0
+            deletionTimestamp: deletionTimestamp
             labels:
               key: labels
             ownerReferences:
@@ -17367,9 +17202,7 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             - apiVersion: apiVersion
@@ -17377,15 +17210,11 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             clusterName: clusterName
-            creationTimestamp:
-              seconds: seconds
-              nanos: 0
+            creationTimestamp: creationTimestamp
             name: name
             namespace: namespace
           spec:
@@ -17726,9 +17555,7 @@ components:
           annotations:
             key: annotations
           generateName: generateName
-          deletionTimestamp:
-            seconds: seconds
-            nanos: 0
+          deletionTimestamp: deletionTimestamp
           labels:
             key: labels
           ownerReferences:
@@ -17753,9 +17580,7 @@ components:
               Raw: Raw
             manager: manager
             subresource: subresource
-            time:
-              seconds: seconds
-              nanos: 0
+            time: time
             operation: operation
             fieldsType: fieldsType
           - apiVersion: apiVersion
@@ -17763,15 +17588,11 @@ components:
               Raw: Raw
             manager: manager
             subresource: subresource
-            time:
-              seconds: seconds
-              nanos: 0
+            time: time
             operation: operation
             fieldsType: fieldsType
           clusterName: clusterName
-          creationTimestamp:
-            seconds: seconds
-            nanos: 0
+          creationTimestamp: creationTimestamp
           name: name
           namespace: namespace
         operation:
@@ -18014,15 +17835,11 @@ components:
             - externalURLs
             - externalURLs
           sourceType: sourceType
-          observedAt:
-            seconds: seconds
-            nanos: 0
+          observedAt: observedAt
           operationState:
             phase: phase
             retryCount: retryCount
-            startedAt:
-              seconds: seconds
-              nanos: 0
+            startedAt: startedAt
             syncResult:
               resources:
               - syncPhase: syncPhase
@@ -18225,12 +18042,8 @@ components:
                 value: value
               - name: name
                 value: value
-            finishedAt:
-              seconds: seconds
-              nanos: 0
-          reconciledAt:
-            seconds: seconds
-            nanos: 0
+            finishedAt: finishedAt
+          reconciledAt: reconciledAt
           health:
             message: message
             status: status
@@ -18260,9 +18073,7 @@ components:
             group: group
             status: status
           history:
-          - deployStartedAt:
-              seconds: seconds
-              nanos: 0
+          - deployStartedAt: deployStartedAt
             id: id
             source:
               repoURL: repoURL
@@ -18333,13 +18144,9 @@ components:
                   value: value
                 version: version
                 ignoreMissingValueFiles: true
-            deployedAt:
-              seconds: seconds
-              nanos: 0
+            deployedAt: deployedAt
             revision: revision
-          - deployStartedAt:
-              seconds: seconds
-              nanos: 0
+          - deployStartedAt: deployStartedAt
             id: id
             source:
               repoURL: repoURL
@@ -18410,19 +18217,13 @@ components:
                   value: value
                 version: version
                 ignoreMissingValueFiles: true
-            deployedAt:
-              seconds: seconds
-              nanos: 0
+            deployedAt: deployedAt
             revision: revision
           conditions:
-          - lastTransitionTime:
-              seconds: seconds
-              nanos: 0
+          - lastTransitionTime: lastTransitionTime
             message: message
             type: type
-          - lastTransitionTime:
-              seconds: seconds
-              nanos: 0
+          - lastTransitionTime: lastTransitionTime
             message: message
             type: type
           resourceHealthSource: resourceHealthSource
@@ -18524,14 +18325,12 @@ components:
       type: object
     v1alpha1ApplicationCondition:
       example:
-        lastTransitionTime:
-          seconds: seconds
-          nanos: 0
+        lastTransitionTime: lastTransitionTime
         message: message
         type: type
       properties:
         lastTransitionTime:
-          $ref: '#/components/schemas/v1Time'
+          type: string
         message:
           title: Message contains human-readable message indicating details about
             condition
@@ -18580,9 +18379,7 @@ components:
             annotations:
               key: annotations
             generateName: generateName
-            deletionTimestamp:
-              seconds: seconds
-              nanos: 0
+            deletionTimestamp: deletionTimestamp
             labels:
               key: labels
             ownerReferences:
@@ -18607,9 +18404,7 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             - apiVersion: apiVersion
@@ -18617,15 +18412,11 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             clusterName: clusterName
-            creationTimestamp:
-              seconds: seconds
-              nanos: 0
+            creationTimestamp: creationTimestamp
             name: name
             namespace: namespace
           operation:
@@ -18868,15 +18659,11 @@ components:
               - externalURLs
               - externalURLs
             sourceType: sourceType
-            observedAt:
-              seconds: seconds
-              nanos: 0
+            observedAt: observedAt
             operationState:
               phase: phase
               retryCount: retryCount
-              startedAt:
-                seconds: seconds
-                nanos: 0
+              startedAt: startedAt
               syncResult:
                 resources:
                 - syncPhase: syncPhase
@@ -19079,12 +18866,8 @@ components:
                   value: value
                 - name: name
                   value: value
-              finishedAt:
-                seconds: seconds
-                nanos: 0
-            reconciledAt:
-              seconds: seconds
-              nanos: 0
+              finishedAt: finishedAt
+            reconciledAt: reconciledAt
             health:
               message: message
               status: status
@@ -19114,9 +18897,7 @@ components:
               group: group
               status: status
             history:
-            - deployStartedAt:
-                seconds: seconds
-                nanos: 0
+            - deployStartedAt: deployStartedAt
               id: id
               source:
                 repoURL: repoURL
@@ -19187,13 +18968,9 @@ components:
                     value: value
                   version: version
                   ignoreMissingValueFiles: true
-              deployedAt:
-                seconds: seconds
-                nanos: 0
+              deployedAt: deployedAt
               revision: revision
-            - deployStartedAt:
-                seconds: seconds
-                nanos: 0
+            - deployStartedAt: deployStartedAt
               id: id
               source:
                 repoURL: repoURL
@@ -19264,19 +19041,13 @@ components:
                     value: value
                   version: version
                   ignoreMissingValueFiles: true
-              deployedAt:
-                seconds: seconds
-                nanos: 0
+              deployedAt: deployedAt
               revision: revision
             conditions:
-            - lastTransitionTime:
-                seconds: seconds
-                nanos: 0
+            - lastTransitionTime: lastTransitionTime
               message: message
               type: type
-            - lastTransitionTime:
-                seconds: seconds
-                nanos: 0
+            - lastTransitionTime: lastTransitionTime
               message: message
               type: type
             resourceHealthSource: resourceHealthSource
@@ -19366,9 +19137,7 @@ components:
             annotations:
               key: annotations
             generateName: generateName
-            deletionTimestamp:
-              seconds: seconds
-              nanos: 0
+            deletionTimestamp: deletionTimestamp
             labels:
               key: labels
             ownerReferences:
@@ -19393,9 +19162,7 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             - apiVersion: apiVersion
@@ -19403,15 +19170,11 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             clusterName: clusterName
-            creationTimestamp:
-              seconds: seconds
-              nanos: 0
+            creationTimestamp: creationTimestamp
             name: name
             namespace: namespace
           operation:
@@ -19654,15 +19417,11 @@ components:
               - externalURLs
               - externalURLs
             sourceType: sourceType
-            observedAt:
-              seconds: seconds
-              nanos: 0
+            observedAt: observedAt
             operationState:
               phase: phase
               retryCount: retryCount
-              startedAt:
-                seconds: seconds
-                nanos: 0
+              startedAt: startedAt
               syncResult:
                 resources:
                 - syncPhase: syncPhase
@@ -19865,12 +19624,8 @@ components:
                   value: value
                 - name: name
                   value: value
-              finishedAt:
-                seconds: seconds
-                nanos: 0
-            reconciledAt:
-              seconds: seconds
-              nanos: 0
+              finishedAt: finishedAt
+            reconciledAt: reconciledAt
             health:
               message: message
               status: status
@@ -19900,9 +19655,7 @@ components:
               group: group
               status: status
             history:
-            - deployStartedAt:
-                seconds: seconds
-                nanos: 0
+            - deployStartedAt: deployStartedAt
               id: id
               source:
                 repoURL: repoURL
@@ -19973,13 +19726,9 @@ components:
                     value: value
                   version: version
                   ignoreMissingValueFiles: true
-              deployedAt:
-                seconds: seconds
-                nanos: 0
+              deployedAt: deployedAt
               revision: revision
-            - deployStartedAt:
-                seconds: seconds
-                nanos: 0
+            - deployStartedAt: deployStartedAt
               id: id
               source:
                 repoURL: repoURL
@@ -20050,19 +19799,13 @@ components:
                     value: value
                   version: version
                   ignoreMissingValueFiles: true
-              deployedAt:
-                seconds: seconds
-                nanos: 0
+              deployedAt: deployedAt
               revision: revision
             conditions:
-            - lastTransitionTime:
-                seconds: seconds
-                nanos: 0
+            - lastTransitionTime: lastTransitionTime
               message: message
               type: type
-            - lastTransitionTime:
-                seconds: seconds
-                nanos: 0
+            - lastTransitionTime: lastTransitionTime
               message: message
               type: type
             resourceHealthSource: resourceHealthSource
@@ -20165,9 +19908,7 @@ components:
           annotations:
             key: annotations
           generateName: generateName
-          deletionTimestamp:
-            seconds: seconds
-            nanos: 0
+          deletionTimestamp: deletionTimestamp
           labels:
             key: labels
           ownerReferences:
@@ -20192,9 +19933,7 @@ components:
               Raw: Raw
             manager: manager
             subresource: subresource
-            time:
-              seconds: seconds
-              nanos: 0
+            time: time
             operation: operation
             fieldsType: fieldsType
           - apiVersion: apiVersion
@@ -20202,15 +19941,11 @@ components:
               Raw: Raw
             manager: manager
             subresource: subresource
-            time:
-              seconds: seconds
-              nanos: 0
+            time: time
             operation: operation
             fieldsType: fieldsType
           clusterName: clusterName
-          creationTimestamp:
-            seconds: seconds
-            nanos: 0
+          creationTimestamp: creationTimestamp
           name: name
           namespace: namespace
         spec:
@@ -30712,16 +30447,12 @@ components:
         status:
           conditions:
           - reason: reason
-            lastTransitionTime:
-              seconds: seconds
-              nanos: 0
+            lastTransitionTime: lastTransitionTime
             message: message
             type: type
             status: status
           - reason: reason
-            lastTransitionTime:
-              seconds: seconds
-              nanos: 0
+            lastTransitionTime: lastTransitionTime
             message: message
             type: type
             status: status
@@ -30743,15 +30474,13 @@ components:
     v1alpha1ApplicationSetCondition:
       example:
         reason: reason
-        lastTransitionTime:
-          seconds: seconds
-          nanos: 0
+        lastTransitionTime: lastTransitionTime
         message: message
         type: type
         status: status
       properties:
         lastTransitionTime:
-          $ref: '#/components/schemas/v1Time'
+          type: string
         message:
           title: Message contains human-readable message indicating details about
             condition
@@ -35988,9 +35717,7 @@ components:
             annotations:
               key: annotations
             generateName: generateName
-            deletionTimestamp:
-              seconds: seconds
-              nanos: 0
+            deletionTimestamp: deletionTimestamp
             labels:
               key: labels
             ownerReferences:
@@ -36015,9 +35742,7 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             - apiVersion: apiVersion
@@ -36025,15 +35750,11 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             clusterName: clusterName
-            creationTimestamp:
-              seconds: seconds
-              nanos: 0
+            creationTimestamp: creationTimestamp
             name: name
             namespace: namespace
           spec:
@@ -46535,16 +46256,12 @@ components:
           status:
             conditions:
             - reason: reason
-              lastTransitionTime:
-                seconds: seconds
-                nanos: 0
+              lastTransitionTime: lastTransitionTime
               message: message
               type: type
               status: status
             - reason: reason
-              lastTransitionTime:
-                seconds: seconds
-                nanos: 0
+              lastTransitionTime: lastTransitionTime
               message: message
               type: type
               status: status
@@ -46557,9 +46274,7 @@ components:
             annotations:
               key: annotations
             generateName: generateName
-            deletionTimestamp:
-              seconds: seconds
-              nanos: 0
+            deletionTimestamp: deletionTimestamp
             labels:
               key: labels
             ownerReferences:
@@ -46584,9 +46299,7 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             - apiVersion: apiVersion
@@ -46594,15 +46307,11 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             clusterName: clusterName
-            creationTimestamp:
-              seconds: seconds
-              nanos: 0
+            creationTimestamp: creationTimestamp
             name: name
             namespace: namespace
           spec:
@@ -57104,16 +56813,12 @@ components:
           status:
             conditions:
             - reason: reason
-              lastTransitionTime:
-                seconds: seconds
-                nanos: 0
+              lastTransitionTime: lastTransitionTime
               message: message
               type: type
               status: status
             - reason: reason
-              lastTransitionTime:
-                seconds: seconds
-                nanos: 0
+              lastTransitionTime: lastTransitionTime
               message: message
               type: type
               status: status
@@ -68650,16 +68355,12 @@ components:
       example:
         conditions:
         - reason: reason
-          lastTransitionTime:
-            seconds: seconds
-            nanos: 0
+          lastTransitionTime: lastTransitionTime
           message: message
           type: type
           status: status
         - reason: reason
-          lastTransitionTime:
-            seconds: seconds
-            nanos: 0
+          lastTransitionTime: lastTransitionTime
           message: message
           type: type
           status: status
@@ -69342,15 +69043,11 @@ components:
           - externalURLs
           - externalURLs
         sourceType: sourceType
-        observedAt:
-          seconds: seconds
-          nanos: 0
+        observedAt: observedAt
         operationState:
           phase: phase
           retryCount: retryCount
-          startedAt:
-            seconds: seconds
-            nanos: 0
+          startedAt: startedAt
           syncResult:
             resources:
             - syncPhase: syncPhase
@@ -69553,12 +69250,8 @@ components:
               value: value
             - name: name
               value: value
-          finishedAt:
-            seconds: seconds
-            nanos: 0
-        reconciledAt:
-          seconds: seconds
-          nanos: 0
+          finishedAt: finishedAt
+        reconciledAt: reconciledAt
         health:
           message: message
           status: status
@@ -69588,9 +69281,7 @@ components:
           group: group
           status: status
         history:
-        - deployStartedAt:
-            seconds: seconds
-            nanos: 0
+        - deployStartedAt: deployStartedAt
           id: id
           source:
             repoURL: repoURL
@@ -69661,13 +69352,9 @@ components:
                 value: value
               version: version
               ignoreMissingValueFiles: true
-          deployedAt:
-            seconds: seconds
-            nanos: 0
+          deployedAt: deployedAt
           revision: revision
-        - deployStartedAt:
-            seconds: seconds
-            nanos: 0
+        - deployStartedAt: deployStartedAt
           id: id
           source:
             repoURL: repoURL
@@ -69738,19 +69425,13 @@ components:
                 value: value
               version: version
               ignoreMissingValueFiles: true
-          deployedAt:
-            seconds: seconds
-            nanos: 0
+          deployedAt: deployedAt
           revision: revision
         conditions:
-        - lastTransitionTime:
-            seconds: seconds
-            nanos: 0
+        - lastTransitionTime: lastTransitionTime
           message: message
           type: type
-        - lastTransitionTime:
-            seconds: seconds
-            nanos: 0
+        - lastTransitionTime: lastTransitionTime
           message: message
           type: type
         resourceHealthSource: resourceHealthSource
@@ -69845,11 +69526,11 @@ components:
           title: History contains information about the application's sync history
           type: array
         observedAt:
-          $ref: '#/components/schemas/v1Time'
+          type: string
         operationState:
           $ref: '#/components/schemas/v1alpha1OperationState'
         reconciledAt:
-          $ref: '#/components/schemas/v1Time'
+          type: string
         resourceHealthSource:
           title: "ResourceHealthSource indicates where the resource health status\
             \ is stored: inline if not set or appTree"
@@ -69900,9 +69581,7 @@ components:
             namespace: namespace
             version: version
             group: group
-          createdAt:
-            seconds: seconds
-            nanos: 0
+          createdAt: createdAt
           images:
           - images
           - images
@@ -69975,9 +69654,7 @@ components:
             namespace: namespace
             version: version
             group: group
-          createdAt:
-            seconds: seconds
-            nanos: 0
+          createdAt: createdAt
           images:
           - images
           - images
@@ -70051,9 +69728,7 @@ components:
             namespace: namespace
             version: version
             group: group
-          createdAt:
-            seconds: seconds
-            nanos: 0
+          createdAt: createdAt
           images:
           - images
           - images
@@ -70126,9 +69801,7 @@ components:
             namespace: namespace
             version: version
             group: group
-          createdAt:
-            seconds: seconds
-            nanos: 0
+          createdAt: createdAt
           images:
           - images
           - images
@@ -70274,9 +69947,7 @@ components:
             annotations:
               key: annotations
             generateName: generateName
-            deletionTimestamp:
-              seconds: seconds
-              nanos: 0
+            deletionTimestamp: deletionTimestamp
             labels:
               key: labels
             ownerReferences:
@@ -70301,9 +69972,7 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             - apiVersion: apiVersion
@@ -70311,15 +69980,11 @@ components:
                 Raw: Raw
               manager: manager
               subresource: subresource
-              time:
-                seconds: seconds
-                nanos: 0
+              time: time
               operation: operation
               fieldsType: fieldsType
             clusterName: clusterName
-            creationTimestamp:
-              seconds: seconds
-              nanos: 0
+            creationTimestamp: creationTimestamp
             name: name
             namespace: namespace
           operation:
@@ -70562,15 +70227,11 @@ components:
               - externalURLs
               - externalURLs
             sourceType: sourceType
-            observedAt:
-              seconds: seconds
-              nanos: 0
+            observedAt: observedAt
             operationState:
               phase: phase
               retryCount: retryCount
-              startedAt:
-                seconds: seconds
-                nanos: 0
+              startedAt: startedAt
               syncResult:
                 resources:
                 - syncPhase: syncPhase
@@ -70773,12 +70434,8 @@ components:
                   value: value
                 - name: name
                   value: value
-              finishedAt:
-                seconds: seconds
-                nanos: 0
-            reconciledAt:
-              seconds: seconds
-              nanos: 0
+              finishedAt: finishedAt
+            reconciledAt: reconciledAt
             health:
               message: message
               status: status
@@ -70808,9 +70465,7 @@ components:
               group: group
               status: status
             history:
-            - deployStartedAt:
-                seconds: seconds
-                nanos: 0
+            - deployStartedAt: deployStartedAt
               id: id
               source:
                 repoURL: repoURL
@@ -70881,13 +70536,9 @@ components:
                     value: value
                   version: version
                   ignoreMissingValueFiles: true
-              deployedAt:
-                seconds: seconds
-                nanos: 0
+              deployedAt: deployedAt
               revision: revision
-            - deployStartedAt:
-                seconds: seconds
-                nanos: 0
+            - deployStartedAt: deployStartedAt
               id: id
               source:
                 repoURL: repoURL
@@ -70958,19 +70609,13 @@ components:
                     value: value
                   version: version
                   ignoreMissingValueFiles: true
-              deployedAt:
-                seconds: seconds
-                nanos: 0
+              deployedAt: deployedAt
               revision: revision
             conditions:
-            - lastTransitionTime:
-                seconds: seconds
-                nanos: 0
+            - lastTransitionTime: lastTransitionTime
               message: message
               type: type
-            - lastTransitionTime:
-                seconds: seconds
-                nanos: 0
+            - lastTransitionTime: lastTransitionTime
               message: message
               type: type
             resourceHealthSource: resourceHealthSource
@@ -71101,18 +70746,14 @@ components:
         serverVersion: serverVersion
         connectionState:
           message: message
-          attemptedAt:
-            seconds: seconds
-            nanos: 0
+          attemptedAt: attemptedAt
           status: status
         annotations:
           key: annotations
         project: project
         labels:
           key: labels
-        refreshRequestedAt:
-          seconds: seconds
-          nanos: 0
+        refreshRequestedAt: refreshRequestedAt
         clusterResources: true
         name: name
         shard: shard
@@ -71145,17 +70786,13 @@ components:
           - apiVersions
           connectionState:
             message: message
-            attemptedAt:
-              seconds: seconds
-              nanos: 0
+            attemptedAt: attemptedAt
             status: status
           cacheInfo:
-            apisCount: apisCount
-            lastCacheSyncTime:
-              seconds: seconds
-              nanos: 0
-            resourcesCount: resourcesCount
-          applicationsCount: applicationsCount
+            apisCount: 6
+            lastCacheSyncTime: lastCacheSyncTime
+            resourcesCount: 1
+          applicationsCount: 0
         namespaces:
         - namespaces
         - namespaces
@@ -71194,7 +70831,7 @@ components:
             to be added as item inside Destinations project entity
           type: string
         refreshRequestedAt:
-          $ref: '#/components/schemas/v1Time'
+          type: string
         server:
           title: Server is the API server URL of the Kubernetes cluster
           type: string
@@ -71212,22 +70849,16 @@ components:
       type: object
     v1alpha1ClusterCacheInfo:
       example:
-        apisCount: apisCount
-        lastCacheSyncTime:
-          seconds: seconds
-          nanos: 0
-        resourcesCount: resourcesCount
+        apisCount: 6
+        lastCacheSyncTime: lastCacheSyncTime
+        resourcesCount: 1
       properties:
         apisCount:
-          format: int64
-          title: APIsCount holds number of observed Kubernetes API count
-          type: string
+          type: integer
         lastCacheSyncTime:
-          $ref: '#/components/schemas/v1Time'
-        resourcesCount:
-          format: int64
-          title: ResourcesCount holds number of observed Kubernetes resources
           type: string
+        resourcesCount:
+          type: integer
       title: ClusterCacheInfo contains information about the cluster cache
       type: object
     v1alpha1ClusterConfig:
@@ -71448,17 +71079,13 @@ components:
         - apiVersions
         connectionState:
           message: message
-          attemptedAt:
-            seconds: seconds
-            nanos: 0
+          attemptedAt: attemptedAt
           status: status
         cacheInfo:
-          apisCount: apisCount
-          lastCacheSyncTime:
-            seconds: seconds
-            nanos: 0
-          resourcesCount: resourcesCount
-        applicationsCount: applicationsCount
+          apisCount: 6
+          lastCacheSyncTime: lastCacheSyncTime
+          resourcesCount: 1
+        applicationsCount: 0
       properties:
         apiVersions:
           items:
@@ -71466,10 +71093,7 @@ components:
           title: APIVersions contains list of API versions supported by the cluster
           type: array
         applicationsCount:
-          format: int64
-          title: ApplicationsCount is the number of applications managed by Argo CD
-            on the cluster
-          type: string
+          type: integer
         cacheInfo:
           $ref: '#/components/schemas/v1alpha1ClusterCacheInfo'
         connectionState:
@@ -71493,18 +71117,14 @@ components:
           serverVersion: serverVersion
           connectionState:
             message: message
-            attemptedAt:
-              seconds: seconds
-              nanos: 0
+            attemptedAt: attemptedAt
             status: status
           annotations:
             key: annotations
           project: project
           labels:
             key: labels
-          refreshRequestedAt:
-            seconds: seconds
-            nanos: 0
+          refreshRequestedAt: refreshRequestedAt
           clusterResources: true
           name: name
           shard: shard
@@ -71537,17 +71157,13 @@ components:
             - apiVersions
             connectionState:
               message: message
-              attemptedAt:
-                seconds: seconds
-                nanos: 0
+              attemptedAt: attemptedAt
               status: status
             cacheInfo:
-              apisCount: apisCount
-              lastCacheSyncTime:
-                seconds: seconds
-                nanos: 0
-              resourcesCount: resourcesCount
-            applicationsCount: applicationsCount
+              apisCount: 6
+              lastCacheSyncTime: lastCacheSyncTime
+              resourcesCount: 1
+            applicationsCount: 0
           namespaces:
           - namespaces
           - namespaces
@@ -71555,18 +71171,14 @@ components:
           serverVersion: serverVersion
           connectionState:
             message: message
-            attemptedAt:
-              seconds: seconds
-              nanos: 0
+            attemptedAt: attemptedAt
             status: status
           annotations:
             key: annotations
           project: project
           labels:
             key: labels
-          refreshRequestedAt:
-            seconds: seconds
-            nanos: 0
+          refreshRequestedAt: refreshRequestedAt
           clusterResources: true
           name: name
           shard: shard
@@ -71599,17 +71211,13 @@ components:
             - apiVersions
             connectionState:
               message: message
-              attemptedAt:
-                seconds: seconds
-                nanos: 0
+              attemptedAt: attemptedAt
               status: status
             cacheInfo:
-              apisCount: apisCount
-              lastCacheSyncTime:
-                seconds: seconds
-                nanos: 0
-              resourcesCount: resourcesCount
-            applicationsCount: applicationsCount
+              apisCount: 6
+              lastCacheSyncTime: lastCacheSyncTime
+              resourcesCount: 1
+            applicationsCount: 0
           namespaces:
           - namespaces
           - namespaces
@@ -71755,13 +71363,11 @@ components:
     v1alpha1ConnectionState:
       example:
         message: message
-        attemptedAt:
-          seconds: seconds
-          nanos: 0
+        attemptedAt: attemptedAt
         status: status
       properties:
         attemptedAt:
-          $ref: '#/components/schemas/v1Time'
+          type: string
         message:
           title: Message contains human readable information about the connection
             status
@@ -76956,9 +76562,7 @@ components:
       example:
         phase: phase
         retryCount: retryCount
-        startedAt:
-          seconds: seconds
-          nanos: 0
+        startedAt: startedAt
         syncResult:
           resources:
           - syncPhase: syncPhase
@@ -77161,12 +76765,10 @@ components:
             value: value
           - name: name
             value: value
-        finishedAt:
-          seconds: seconds
-          nanos: 0
+        finishedAt: finishedAt
       properties:
         finishedAt:
-          $ref: '#/components/schemas/v1Time'
+          type: string
         message:
           description: Message holds any pertinent messages when attempting to perform
             operation (typically errors).
@@ -77181,7 +76783,7 @@ components:
           title: RetryCount contains time of operation retries
           type: string
         startedAt:
-          $ref: '#/components/schemas/v1Time'
+          type: string
         syncResult:
           $ref: '#/components/schemas/v1alpha1SyncOperationResult'
       title: OperationState contains information about state of a running operation
@@ -77743,9 +77345,7 @@ components:
         githubAppID: githubAppID
         connectionState:
           message: message
-          attemptedAt:
-            seconds: seconds
-            nanos: 0
+          attemptedAt: attemptedAt
           status: status
         repo: repo
         githubAppInstallationID: githubAppInstallationID
@@ -77916,9 +77516,7 @@ components:
           githubAppID: githubAppID
           connectionState:
             message: message
-            attemptedAt:
-              seconds: seconds
-              nanos: 0
+            attemptedAt: attemptedAt
             status: status
           repo: repo
           githubAppInstallationID: githubAppInstallationID
@@ -77941,9 +77539,7 @@ components:
           githubAppID: githubAppID
           connectionState:
             message: message
-            attemptedAt:
-              seconds: seconds
-              nanos: 0
+            attemptedAt: attemptedAt
             status: status
           repo: repo
           githubAppInstallationID: githubAppInstallationID
@@ -78186,9 +77782,7 @@ components:
           namespace: namespace
           version: version
           group: group
-        createdAt:
-          seconds: seconds
-          nanos: 0
+        createdAt: createdAt
         images:
         - images
         - images
@@ -78256,7 +77850,7 @@ components:
             key: labels
       properties:
         createdAt:
-          $ref: '#/components/schemas/v1Time'
+          type: string
         health:
           $ref: '#/components/schemas/v1alpha1HealthStatus'
         images:
@@ -78451,9 +78045,7 @@ components:
       type: object
     v1alpha1RevisionHistory:
       example:
-        deployStartedAt:
-          seconds: seconds
-          nanos: 0
+        deployStartedAt: deployStartedAt
         id: id
         source:
           repoURL: repoURL
@@ -78524,15 +78116,13 @@ components:
               value: value
             version: version
             ignoreMissingValueFiles: true
-        deployedAt:
-          seconds: seconds
-          nanos: 0
+        deployedAt: deployedAt
         revision: revision
       properties:
         deployStartedAt:
-          $ref: '#/components/schemas/v1Time'
+          type: string
         deployedAt:
-          $ref: '#/components/schemas/v1Time'
+          type: string
         id:
           format: int64
           title: ID is an auto incrementing identifier of the RevisionHistory
@@ -78546,9 +78136,7 @@ components:
       type: object
     v1alpha1RevisionMetadata:
       example:
-        date:
-          seconds: seconds
-          nanos: 0
+        date: date
         signatureInfo: signatureInfo
         author: author
         message: message
@@ -78563,7 +78151,7 @@ components:
             but might not match this example
           type: string
         date:
-          $ref: '#/components/schemas/v1Time'
+          type: string
         message:
           title: |-
             Message contains the message associated with the revision, most likely the commit message.
@@ -79602,9 +79190,7 @@ components:
     Stream_result_of_applicationLogEntry:
       example:
         result:
-          timeStamp:
-            seconds: seconds
-            nanos: 0
+          timeStamp: timeStamp
           last: true
           timeStampStr: timeStampStr
           podName: podName
@@ -79639,9 +79225,7 @@ components:
               annotations:
                 key: annotations
               generateName: generateName
-              deletionTimestamp:
-                seconds: seconds
-                nanos: 0
+              deletionTimestamp: deletionTimestamp
               labels:
                 key: labels
               ownerReferences:
@@ -79666,9 +79250,7 @@ components:
                   Raw: Raw
                 manager: manager
                 subresource: subresource
-                time:
-                  seconds: seconds
-                  nanos: 0
+                time: time
                 operation: operation
                 fieldsType: fieldsType
               - apiVersion: apiVersion
@@ -79676,15 +79258,11 @@ components:
                   Raw: Raw
                 manager: manager
                 subresource: subresource
-                time:
-                  seconds: seconds
-                  nanos: 0
+                time: time
                 operation: operation
                 fieldsType: fieldsType
               clusterName: clusterName
-              creationTimestamp:
-                seconds: seconds
-                nanos: 0
+              creationTimestamp: creationTimestamp
               name: name
               namespace: namespace
             operation:
@@ -79927,15 +79505,11 @@ components:
                 - externalURLs
                 - externalURLs
               sourceType: sourceType
-              observedAt:
-                seconds: seconds
-                nanos: 0
+              observedAt: observedAt
               operationState:
                 phase: phase
                 retryCount: retryCount
-                startedAt:
-                  seconds: seconds
-                  nanos: 0
+                startedAt: startedAt
                 syncResult:
                   resources:
                   - syncPhase: syncPhase
@@ -80138,12 +79712,8 @@ components:
                     value: value
                   - name: name
                     value: value
-                finishedAt:
-                  seconds: seconds
-                  nanos: 0
-              reconciledAt:
-                seconds: seconds
-                nanos: 0
+                finishedAt: finishedAt
+              reconciledAt: reconciledAt
               health:
                 message: message
                 status: status
@@ -80173,9 +79743,7 @@ components:
                 group: group
                 status: status
               history:
-              - deployStartedAt:
-                  seconds: seconds
-                  nanos: 0
+              - deployStartedAt: deployStartedAt
                 id: id
                 source:
                   repoURL: repoURL
@@ -80246,13 +79814,9 @@ components:
                       value: value
                     version: version
                     ignoreMissingValueFiles: true
-                deployedAt:
-                  seconds: seconds
-                  nanos: 0
+                deployedAt: deployedAt
                 revision: revision
-              - deployStartedAt:
-                  seconds: seconds
-                  nanos: 0
+              - deployStartedAt: deployStartedAt
                 id: id
                 source:
                   repoURL: repoURL
@@ -80323,19 +79887,13 @@ components:
                       value: value
                     version: version
                     ignoreMissingValueFiles: true
-                deployedAt:
-                  seconds: seconds
-                  nanos: 0
+                deployedAt: deployedAt
                 revision: revision
               conditions:
-              - lastTransitionTime:
-                  seconds: seconds
-                  nanos: 0
+              - lastTransitionTime: lastTransitionTime
                 message: message
                 type: type
-              - lastTransitionTime:
-                  seconds: seconds
-                  nanos: 0
+              - lastTransitionTime: lastTransitionTime
                 message: message
                 type: type
               resourceHealthSource: resourceHealthSource
@@ -80445,9 +80003,7 @@ components:
               namespace: namespace
               version: version
               group: group
-            createdAt:
-              seconds: seconds
-              nanos: 0
+            createdAt: createdAt
             images:
             - images
             - images
@@ -80520,9 +80076,7 @@ components:
               namespace: namespace
               version: version
               group: group
-            createdAt:
-              seconds: seconds
-              nanos: 0
+            createdAt: createdAt
             images:
             - images
             - images
@@ -80596,9 +80150,7 @@ components:
               namespace: namespace
               version: version
               group: group
-            createdAt:
-              seconds: seconds
-              nanos: 0
+            createdAt: createdAt
             images:
             - images
             - images
@@ -80671,9 +80223,7 @@ components:
               namespace: namespace
               version: version
               group: group
-            createdAt:
-              seconds: seconds
-              nanos: 0
+            createdAt: createdAt
             images:
             - images
             - images

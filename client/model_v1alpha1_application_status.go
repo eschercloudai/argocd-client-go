@@ -22,9 +22,9 @@ type V1alpha1ApplicationStatus struct {
 	Conditions []V1alpha1ApplicationCondition `json:"conditions,omitempty"`
 	Health *V1alpha1HealthStatus `json:"health,omitempty"`
 	History []V1alpha1RevisionHistory `json:"history,omitempty"`
-	ObservedAt *V1Time `json:"observedAt,omitempty"`
+	ObservedAt *string `json:"observedAt,omitempty"`
 	OperationState *V1alpha1OperationState `json:"operationState,omitempty"`
-	ReconciledAt *V1Time `json:"reconciledAt,omitempty"`
+	ReconciledAt *string `json:"reconciledAt,omitempty"`
 	ResourceHealthSource *string `json:"resourceHealthSource,omitempty"`
 	Resources []V1alpha1ResourceStatus `json:"resources,omitempty"`
 	SourceType *string `json:"sourceType,omitempty"`
@@ -146,9 +146,9 @@ func (o *V1alpha1ApplicationStatus) SetHistory(v []V1alpha1RevisionHistory) {
 }
 
 // GetObservedAt returns the ObservedAt field value if set, zero value otherwise.
-func (o *V1alpha1ApplicationStatus) GetObservedAt() V1Time {
+func (o *V1alpha1ApplicationStatus) GetObservedAt() string {
 	if o == nil || isNil(o.ObservedAt) {
-		var ret V1Time
+		var ret string
 		return ret
 	}
 	return *o.ObservedAt
@@ -156,7 +156,7 @@ func (o *V1alpha1ApplicationStatus) GetObservedAt() V1Time {
 
 // GetObservedAtOk returns a tuple with the ObservedAt field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *V1alpha1ApplicationStatus) GetObservedAtOk() (*V1Time, bool) {
+func (o *V1alpha1ApplicationStatus) GetObservedAtOk() (*string, bool) {
 	if o == nil || isNil(o.ObservedAt) {
 		return nil, false
 	}
@@ -172,8 +172,8 @@ func (o *V1alpha1ApplicationStatus) HasObservedAt() bool {
 	return false
 }
 
-// SetObservedAt gets a reference to the given V1Time and assigns it to the ObservedAt field.
-func (o *V1alpha1ApplicationStatus) SetObservedAt(v V1Time) {
+// SetObservedAt gets a reference to the given string and assigns it to the ObservedAt field.
+func (o *V1alpha1ApplicationStatus) SetObservedAt(v string) {
 	o.ObservedAt = &v
 }
 
@@ -210,9 +210,9 @@ func (o *V1alpha1ApplicationStatus) SetOperationState(v V1alpha1OperationState) 
 }
 
 // GetReconciledAt returns the ReconciledAt field value if set, zero value otherwise.
-func (o *V1alpha1ApplicationStatus) GetReconciledAt() V1Time {
+func (o *V1alpha1ApplicationStatus) GetReconciledAt() string {
 	if o == nil || isNil(o.ReconciledAt) {
-		var ret V1Time
+		var ret string
 		return ret
 	}
 	return *o.ReconciledAt
@@ -220,7 +220,7 @@ func (o *V1alpha1ApplicationStatus) GetReconciledAt() V1Time {
 
 // GetReconciledAtOk returns a tuple with the ReconciledAt field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *V1alpha1ApplicationStatus) GetReconciledAtOk() (*V1Time, bool) {
+func (o *V1alpha1ApplicationStatus) GetReconciledAtOk() (*string, bool) {
 	if o == nil || isNil(o.ReconciledAt) {
 		return nil, false
 	}
@@ -236,8 +236,8 @@ func (o *V1alpha1ApplicationStatus) HasReconciledAt() bool {
 	return false
 }
 
-// SetReconciledAt gets a reference to the given V1Time and assigns it to the ReconciledAt field.
-func (o *V1alpha1ApplicationStatus) SetReconciledAt(v V1Time) {
+// SetReconciledAt gets a reference to the given string and assigns it to the ReconciledAt field.
+func (o *V1alpha1ApplicationStatus) SetReconciledAt(v string) {
 	o.ReconciledAt = &v
 }
 

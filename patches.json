@@ -1,0 +1,22 @@
+[
+	{
+		"op": "replace",
+		"path": "/definitions/v1Time",
+		"value": {"type": "string"}
+	},
+	{
+                "op": "replace",
+                "path": "/definitions/v1alpha1ClusterCacheInfo/properties/apisCount",
+                "value": {"type": "integer"}
+        },
+	{
+                "op": "replace",
+                "path": "/definitions/v1alpha1ClusterCacheInfo/properties/resourcesCount",
+                "value": {"type": "integer"}
+        },
+	{
+                "op": "replace",
+                "path": "/definitions/v1alpha1ClusterInfo/properties/applicationsCount",
+                "value": {"type": "integer"}
+        }
+]

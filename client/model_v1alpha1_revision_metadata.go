@@ -20,7 +20,7 @@ var _ MappedNullable = &V1alpha1RevisionMetadata{}
 // V1alpha1RevisionMetadata struct for V1alpha1RevisionMetadata
 type V1alpha1RevisionMetadata struct {
 	Author *string `json:"author,omitempty"`
-	Date *V1Time `json:"date,omitempty"`
+	Date *string `json:"date,omitempty"`
 	Message *string `json:"message,omitempty"`
 	// SignatureInfo contains a hint on the signer if the revision was signed with GPG, and signature verification is enabled.
 	SignatureInfo *string `json:"signatureInfo,omitempty"`
@@ -77,9 +77,9 @@ func (o *V1alpha1RevisionMetadata) SetAuthor(v string) {
 }
 
 // GetDate returns the Date field value if set, zero value otherwise.
-func (o *V1alpha1RevisionMetadata) GetDate() V1Time {
+func (o *V1alpha1RevisionMetadata) GetDate() string {
 	if o == nil || isNil(o.Date) {
-		var ret V1Time
+		var ret string
 		return ret
 	}
 	return *o.Date
@@ -87,7 +87,7 @@ func (o *V1alpha1RevisionMetadata) GetDate() V1Time {
 
 // GetDateOk returns a tuple with the Date field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *V1alpha1RevisionMetadata) GetDateOk() (*V1Time, bool) {
+func (o *V1alpha1RevisionMetadata) GetDateOk() (*string, bool) {
 	if o == nil || isNil(o.Date) {
 		return nil, false
 	}
@@ -103,8 +103,8 @@ func (o *V1alpha1RevisionMetadata) HasDate() bool {
 	return false
 }
 
-// SetDate gets a reference to the given V1Time and assigns it to the Date field.
-func (o *V1alpha1RevisionMetadata) SetDate(v V1Time) {
+// SetDate gets a reference to the given string and assigns it to the Date field.
+func (o *V1alpha1RevisionMetadata) SetDate(v string) {
 	o.Date = &v
 }
 

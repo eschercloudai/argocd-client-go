@@ -111,7 +111,6 @@ docs/V1ObjectMeta.md
 docs/V1ObjectReference.md
 docs/V1OwnerReference.md
 docs/V1PortStatus.md
-docs/V1Time.md
 docs/V1alpha1AWSAuthConfig.md
 docs/V1alpha1AppProject.md
 docs/V1alpha1AppProjectList.md
@@ -316,7 +315,6 @@ model_v1_object_meta.go
 model_v1_object_reference.go
 model_v1_owner_reference.go
 model_v1_port_status.go
-model_v1_time.go
 model_v1alpha1_app_project.go
 model_v1alpha1_app_project_list.go
 model_v1alpha1_app_project_spec.go

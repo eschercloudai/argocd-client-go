@@ -19,8 +19,8 @@ var _ MappedNullable = &V1alpha1RevisionHistory{}
 
 // V1alpha1RevisionHistory struct for V1alpha1RevisionHistory
 type V1alpha1RevisionHistory struct {
-	DeployStartedAt *V1Time `json:"deployStartedAt,omitempty"`
-	DeployedAt *V1Time `json:"deployedAt,omitempty"`
+	DeployStartedAt *string `json:"deployStartedAt,omitempty"`
+	DeployedAt *string `json:"deployedAt,omitempty"`
 	Id *string `json:"id,omitempty"`
 	Revision *string `json:"revision,omitempty"`
 	Source *V1alpha1ApplicationSource `json:"source,omitempty"`
@@ -44,9 +44,9 @@ func NewV1alpha1RevisionHistoryWithDefaults() *V1alpha1RevisionHistory {
 }
 
 // GetDeployStartedAt returns the DeployStartedAt field value if set, zero value otherwise.
-func (o *V1alpha1RevisionHistory) GetDeployStartedAt() V1Time {
+func (o *V1alpha1RevisionHistory) GetDeployStartedAt() string {
 	if o == nil || isNil(o.DeployStartedAt) {
-		var ret V1Time
+		var ret string
 		return ret
 	}
 	return *o.DeployStartedAt
@@ -54,7 +54,7 @@ func (o *V1alpha1RevisionHistory) GetDeployStartedAt() V1Time {
 
 // GetDeployStartedAtOk returns a tuple with the DeployStartedAt field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *V1alpha1RevisionHistory) GetDeployStartedAtOk() (*V1Time, bool) {
+func (o *V1alpha1RevisionHistory) GetDeployStartedAtOk() (*string, bool) {
 	if o == nil || isNil(o.DeployStartedAt) {
 		return nil, false
 	}
@@ -70,15 +70,15 @@ func (o *V1alpha1RevisionHistory) HasDeployStartedAt() bool {
 	return false
 }
 
-// SetDeployStartedAt gets a reference to the given V1Time and assigns it to the DeployStartedAt field.
-func (o *V1alpha1RevisionHistory) SetDeployStartedAt(v V1Time) {
+// SetDeployStartedAt gets a reference to the given string and assigns it to the DeployStartedAt field.
+func (o *V1alpha1RevisionHistory) SetDeployStartedAt(v string) {
 	o.DeployStartedAt = &v
 }
 
 // GetDeployedAt returns the DeployedAt field value if set, zero value otherwise.
-func (o *V1alpha1RevisionHistory) GetDeployedAt() V1Time {
+func (o *V1alpha1RevisionHistory) GetDeployedAt() string {
 	if o == nil || isNil(o.DeployedAt) {
-		var ret V1Time
+		var ret string
 		return ret
 	}
 	return *o.DeployedAt
@@ -86,7 +86,7 @@ func (o *V1alpha1RevisionHistory) GetDeployedAt() V1Time {
 
 // GetDeployedAtOk returns a tuple with the DeployedAt field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *V1alpha1RevisionHistory) GetDeployedAtOk() (*V1Time, bool) {
+func (o *V1alpha1RevisionHistory) GetDeployedAtOk() (*string, bool) {
 	if o == nil || isNil(o.DeployedAt) {
 		return nil, false
 	}
@@ -102,8 +102,8 @@ func (o *V1alpha1RevisionHistory) HasDeployedAt() bool {
 	return false
 }
 
-// SetDeployedAt gets a reference to the given V1Time and assigns it to the DeployedAt field.
-func (o *V1alpha1RevisionHistory) SetDeployedAt(v V1Time) {
+// SetDeployedAt gets a reference to the given string and assigns it to the DeployedAt field.
+func (o *V1alpha1RevisionHistory) SetDeployedAt(v string) {
 	o.DeployedAt = &v
 }
 
