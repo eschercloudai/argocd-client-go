@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 .travis.yml
 README.md
 api/openapi.yaml
@@ -437,17 +436,4 @@ model_v1alpha1_sync_window.go
 model_v1alpha1_tls_client_config.go
 model_version_version_message.go
 response.go
-test/api_account_service_test.go
-test/api_application_service_test.go
-test/api_application_set_service_test.go
-test/api_certificate_service_test.go
-test/api_cluster_service_test.go
-test/api_gpg_key_service_test.go
-test/api_notification_service_test.go
-test/api_project_service_test.go
-test/api_repo_creds_service_test.go
-test/api_repository_service_test.go
-test/api_session_service_test.go
-test/api_settings_service_test.go
-test/api_version_service_test.go
 utils.go

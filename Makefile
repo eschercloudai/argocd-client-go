@@ -16,9 +16,11 @@ all:
 		-p packageName=client \
 		-i https://raw.githubusercontent.com/argoproj/argo-cd/$(VERSION)/assets/swagger.json  \
 		-o /mnt/src/client
-	# Pull in any deps missing from auto-generation (e.g. test files).
-	cd client; go mod tidy
+	# Do some fixes...
+	rm -rf client/go.*
+	go mod init github.com/eschercloudai/argocd-client-go
+	go mod tidy
 
 .PHONY: test
 test:
-	cd client; go test ./...
+	go test ./...
