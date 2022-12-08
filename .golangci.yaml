@@ -1,0 +1,34 @@
+run:
+  timeout: 5m
+  skip-dirs:
+  - pkg/api
+linters:
+  enable-all: true
+  disable:
+  # Deprecated or disabled.
+  - nosnakecase
+  - maligned
+  - ifshort
+  - scopelint
+  - exhaustivestruct
+  - deadcode
+  - golint
+  - interfacer
+  - structcheck
+  - varcheck
+  - rowserrcheck
+  - sqlclosecheck
+  - structcheck
+  - wastedassign
+  # Dumb.
+  - exhaustruct
+  - gomnd
+  - varnamelen
+linters-settings:
+  gci:
+    sections:
+    - standard
+    - default
+    - prefix(k8s.io)
+    - prefix(sigs.k8s.io)
+    skip-generated: true
