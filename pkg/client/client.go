@@ -132,15 +132,14 @@ func New(ctx context.Context, options *Options) (*api.APIClient, error) {
 	sessionCreateRequest.SetUsername(options.Username)
 	sessionCreateRequest.SetPassword(options.Password)
 
-	sessionServiceCreate := client.SessionServiceApi.SessionServiceCreate(ctx)
-	sessionServiceCreate = sessionServiceCreate.Body(*sessionCreateRequest)
+	sessionServiceCreate := client.SessionServiceApi.SessionServiceCreate(ctx).Body(*sessionCreateRequest)
 
 	response, httpResponse, err := sessionServiceCreate.Execute()
-	defer httpResponse.Body.Close()
-
 	if err != nil {
 		return nil, fmt.Errorf("unable to create sessison: %w", err)
 	}
+
+	defer httpResponse.Body.Close()
 
 	token, ok := response.GetTokenOk()
 	if !ok {
